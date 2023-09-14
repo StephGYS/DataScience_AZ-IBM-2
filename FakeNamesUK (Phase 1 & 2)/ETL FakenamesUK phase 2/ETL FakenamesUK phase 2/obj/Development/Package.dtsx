@@ -1,0 +1,2952 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/5/2023 8:06:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-7BCMEF4U"
+  DTS:CreatorName="LAPTOP-7BCMEF4U\Strange"
+  DTS:DTSID="{BC81D7D8-56C9-4FBB-8990-632E80836F26}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{D94CF5AE-2EDE-43F0-BFFD-482FB078D3D0}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FakeNamesUK]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0858A974-574C-41DD-B20F-2230372F71B3}"
+      DTS:ObjectName="FakeNamesUK">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\gnago\Desktop\IBM data science AZ\Data Prep\FakeNamesUK\20230903 FakenamesUK\3. Uploaded Data\FakeNamesUK.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{0916C6D7-A8CB-4B20-8E75-F0403E5021F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{0A9DE552-9D9C-4989-85B0-E36D975524DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{191E4365-C54A-49CF-8EAA-262C63B05865}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{68838C61-644C-42ED-8994-8FC1691A526C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{1F1C6815-38C1-4525-A873-54E2CC0689EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{DF20955E-7745-4D77-91F5-855DDBCBD091}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{D30E140A-8C01-4D7A-84DE-827B525DC0F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{0AEFB2FC-2C82-4624-8CF0-40E1D152D3F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{19B2354B-5CE4-4693-A3E7-DE971B4FB3C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{BEB7862B-0387-4747-BE4B-C2CF4FE6AFD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{8397A679-3CDC-4CC2-9D5B-5F99EB2E183C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{9C968CF6-2F2F-4774-ACDD-B97EE611D2B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{57FA6D10-9966-4490-8C44-C2A0EC95D673}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{1CF9947F-58E2-4A27-A1F0-E67AD280795F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{37AA99A0-9D49-45CB-BBAB-82F717E51D65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{833E1F0B-0163-4853-8DB0-26F4D260E639}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{4CF6782B-3420-48BF-9986-14BC8F8E0A21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{BB2C5DFC-383B-4C82-A12D-2687195376E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 18"
+              DTS:DTSID="{30E41803-64EC-4D4E-B96B-C98C6D381A9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 19"
+              DTS:DTSID="{6FEA634D-5B42-460A-9ACA-A8A50CB0DEDE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FakeNamesUK_update.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F207E94D-48CD-4ADC-A3B1-1D49E4771C08}"
+      DTS:ObjectName="FakeNamesUK_update.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\gnago\Desktop\IBM data science AZ\Data Prep\FakeNamesUK (Phase 1 &amp; 2)\20230903 FakenamesUK\3. Uploaded Data\FakeNamesUK.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{163CAB95-A6C7-4EB5-A017-0B172B61E6A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{48CF8D1B-5B96-41E2-9CD1-73E456131B7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{C71C51F5-A245-4E14-A62E-E54AFBD2FBAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{28D1FFAE-48A8-4594-A0C9-7E8252B0A6C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{103A9569-8604-4A1C-B5C2-C0BCE389DE0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{B06B39AD-01C9-443A-87F1-5E7A802DF198}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{5C2F9D71-6CAC-4B47-B046-2CE430D79D49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{DF0A4E10-FDCD-4515-861A-2C93732C36FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{820C39DB-56F8-40C8-ABED-F997DD90F8A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{B1C9D99A-C5E5-4433-BD40-4091AC98B470}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{7BD61B01-1EB5-4C4C-A0EA-07505D8C34AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{6BD5D696-C6E7-4A13-9C29-2269B4603513}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{E795A6C6-1532-4EE0-A9DD-CD1FF504637B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{66FEA0CC-208D-4987-B27A-09188565B5A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{8711BCF5-FEA7-4A78-ACE0-48E978B9C25D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{8D9772A4-31FD-4B6D-8F00-C7AC84D6A3F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{87F0F1E0-015B-40A9-B782-0AAB75B58D15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{D0790A8B-EF06-4052-B2AE-A9800F63D0E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 18"
+              DTS:DTSID="{09D450F5-3096-4C85-BDB3-FBE73F78FACD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 19"
+              DTS:DTSID="{227AC74E-85B5-4ECB-92F5-C2573BD25937}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1F60A5D9-36E5-4182-8E31-E0149B9DEE6C}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\gnago\Desktop\IBM data science AZ\Data Prep\FakeNamesUK (Phase 1 &amp; 2)\20230903 FakenamesUK\4. Analysis\Data Errors\FAkeNamesUK_InsufficientData.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{A8F35318-51EE-457F-A9AF-FC63CCAA7DA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{ED45D511-B7D1-47B0-B34B-CB7B4407157A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{409066F9-C884-47EA-8DD7-A87F723BA5CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{DDBAD09E-BFCD-4751-93CD-7836D222A846}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{032EE19C-73BB-4668-A64C-80DD1F1FE542}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{84451BC5-FB4F-4FAD-92B6-C2D79144D06E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{6D10CAA3-FEC2-4960-8BD8-3EE1760C4883}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{A0BA3157-31DF-473D-AAB4-6AFCAAF0B9C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{D5498518-6B44-4ECA-B9AC-F5C5D7F4DA2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{6EC7D40C-DB21-4042-8A27-30E9E04180A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{AC3652A3-8694-41CA-A1C2-B67D7449766F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{DDF46C25-CC83-4FA7-9FE1-F090EF93907D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{56C45A5E-54C1-4BC4-B0B7-F5F12B7CDAD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{E39F640D-D82F-4D7D-BCF7-E18B3C22B94F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{25855E02-5B5B-4085-9FBD-BAA43E669609}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{8EA165F0-75BE-4087-8FB8-2D153A04DD42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{C8998359-6CE2-4DFE-B51F-72171BDD985C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{6B4D3045-92EF-4B29-A4C1-4DE7925595F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 18"
+              DTS:DTSID="{0E90970E-A455-4ED6-9AED-A9CDE39C353E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 19"
+              DTS:DTSID="{96FDA06F-FB2F-47C0-B0C3-026EF17ABAC5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{73200971-839E-4044-A6F3-2B17F9B27CD9}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\gnago\Desktop\IBM data science AZ\Data Prep\FakeNamesUK (Phase 1 &amp; 2)\20230903 FakenamesUK\4. Analysis\Data Errors\FAkeNamesUK_BadRecords.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{578A22D4-87B8-4D18-B1CB-0D5368443BAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{999C9C15-404A-4DA2-BB97-0A5E9E2F6DFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{88FDB602-7743-4AE8-AF60-CD0A2D0B25A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{5D1E1CF5-74B8-4FDA-9647-12E6F5CCCDC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{D121AAEA-1A63-4A04-AEB2-1FD29951F464}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{78C9FB64-494E-47CC-9385-46CE38844E61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{D4C85BB0-CA28-451A-9AF7-3A135633B6E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{3212BCA1-EC8D-48CD-AAAA-1FE8CB6C32FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{24D66FF2-73DE-4152-A3DE-3BFF74F7FF30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{5DB26D52-86A4-4977-BBF4-91853B2CD14C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{DCEE7DB8-7041-4DF5-822A-CD79DED05754}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{AAA5AD07-67BC-4F71-8835-9948A6537284}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{97E23002-D735-4B1B-B061-957F5639D5B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{791A1F35-2F69-4957-96E6-FA7BCF40CC23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{F3DD2EE2-C333-456D-8A30-DD3B09E26E4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{5F3ACE15-B257-4919-B88B-CEFE368D6EB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{FC95DE41-ACCB-47B6-ADDE-64F7C295BAB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{D3AC822F-B89E-4EA4-B304-5042FF9422A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 18"
+              DTS:DTSID="{E0FB7621-5E94-4803-82C8-430AD39153CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colonne 19"
+              DTS:DTSID="{83CA12BD-E569-455D-9E24-5B4343475796}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A046B488-1684-4DC3-A128-D18DCD71EC36}"
+      DTS:ObjectName="LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-7BCMEF4U\SQLEXPRESS;Initial Catalog=DSTRAINING;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EC452F78-0EDB-4A9B-9059-65773A467367}"
+      DTS:ObjectName="LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-7BCMEF4U\SQLEXPRESS;Initial Catalog=DSTRAINING;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\20230905_FakenamesUK"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{5835B2D5-D665-4D8E-A32C-8D1889C673B3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="20230905_FakenamesUK"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\20230905_FakenamesUK\Destination de fichier plat"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Destination de fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Destination de fichier plat"
+              localeId="1036"
+              name="Destination de fichier plat">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les données remplaceront ou seront ajoutées au fichier de destination."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Spécifie le texte à enregistrer sur le fichier de destination avant d'enregistrer des données."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20230905_FakenamesUK\Destination de fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat]"
+                  hasSideEffects="true"
+                  name="Entrée de destination de fichier plat">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Number"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Number]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Gender]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Title]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Surname]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Name]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Address]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[ZipCode]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[EmailAddress]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Username]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Username"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Username]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Username]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Password]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Password"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Password]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Password]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Birthday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Birthday]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[CCType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[CCNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCNumber"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCNumber]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCNumber]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[CVV2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CVV2"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CVV2]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CVV2]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[CCExpires]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCExpires"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCExpires]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCExpires]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[BloodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="BloodType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[BloodType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Kilograms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Kilograms"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Kilograms]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Centimeters"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Centimeters]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Colonne 18]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 18"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 18]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].Columns[Colonne 19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 19"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 19]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 19]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Username" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CVV2" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCExpires" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="BloodType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Kilograms" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Centimeters" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 18" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 19" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\20230905_FakenamesUK\Destination de fichier plat 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Destination de fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Destination de fichier plat"
+              localeId="1036"
+              name="Destination de fichier plat 1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les données remplaceront ou seront ajoutées au fichier de destination."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Spécifie le texte à enregistrer sur le fichier de destination avant d'enregistrer des données."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat]"
+                  hasSideEffects="true"
+                  name="Entrée de destination de fichier plat">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Number"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Number]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Gender]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Title]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Surname]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Name]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Address]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[ZipCode]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[EmailAddress]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Username]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Username"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Username]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Username]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Password]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Password"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Password]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Password]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Birthday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Birthday]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[CCType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[CCNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCNumber"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCNumber]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCNumber]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[CVV2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CVV2"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CVV2]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CVV2]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[CCExpires]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCExpires"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCExpires]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCExpires]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[BloodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="BloodType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[BloodType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Kilograms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Kilograms"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Kilograms]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Centimeters"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Centimeters]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Colonne 18]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 18"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 18]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].Columns[Colonne 19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 19"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 19]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 19]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Username" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CVV2" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCExpires" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="BloodType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Kilograms" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Centimeters" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 18" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat].ExternalColumns[Colonne 19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 19" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\20230905_FakenamesUK\Destination OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="Destination OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[RAW_FakenamesUK_update]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20230905_FakenamesUK\Destination OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING 1]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Number"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Number]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Title]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Surname]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Name]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Address]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ZipCode]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[EmailAddress]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Username]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Username"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Username]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Username]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Password]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Password"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Password]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Password]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Birthday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[CCType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[CCNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCNumber"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCNumber]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCNumber]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[CVV2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CVV2"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CVV2]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CVV2]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[CCExpires]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CCExpires"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCExpires]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCExpires]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[BloodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="BloodType"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[BloodType]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Kilograms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Kilograms"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Kilograms]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Centimeters"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Centimeters]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Colonne 18]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 18"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Colonne 18]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Colonne 19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 19"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Colonne 19]"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 19]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Username" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CVV2" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CCExpires" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="BloodType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Kilograms" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Centimeters" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Colonne 18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 18" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Colonne 19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Colonne 19" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[RowNumber]"
+                      dataType="i4"
+                      name="RowNumber" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20230905_FakenamesUK\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20230905_FakenamesUK\Fractionnement conditionnel"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Fractionnement conditionnel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Achemine des lignes de données vers différentes sorties, selon le contexte des données. Utilisez des conditions (expressions SSIS) pour spécifier les lignes qui seront acheminées. Par exemple, séparez les enregistrements qui doivent être nettoyés de ceux qui sont prêts à être chargés ou acheminez uniquement un sous-ensemble d'enregistrements."
+              name="Fractionnement conditionnel"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]"
+                  description="Entrée vers la transformation de fractionnement conditionnel"
+                  name="Entrée de fractionnement conditionnel">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel].Columns[BloodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="BloodType"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel].Columns[Kilograms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Kilograms"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Centimeters"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Insufficient Data]"
+                  description="Sortie 1 de la transformation de fractionnement conditionnel"
+                  errorOrTruncationOperation="Calcul"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Insufficient Data"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie l'expression. Cette version d'expression utilise les identificateurs de lignage à la place des noms de colonnes."
+                      name="Expression">[LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]}) == 0 || [LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]}) == 0 || [LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]}) == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie la version claire de l'expression. Cette version d'expression utilise les noms de colonnes."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN(BloodType) == 0 || LEN(Kilograms) == 0 || LEN(Centimeters) == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la position de la condition dans la liste des conditions que la transformation évalue. L'ordre d'évaluation se fait par ordre croissant de valeur."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Check Passed]"
+                  description="Sortie par défaut de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  name="Check Passed"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Sortie d'erreur de fractionnement conditionnel]"
+                  description="Sortie d'erreur de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de fractionnement conditionnel"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Fractionnement conditionnel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Achemine des lignes de données vers différentes sorties, selon le contexte des données. Utilisez des conditions (expressions SSIS) pour spécifier les lignes qui seront acheminées. Par exemple, séparez les enregistrements qui doivent être nettoyés de ceux qui sont prêts à être chargés ou acheminez uniquement un sous-ensemble d'enregistrements."
+              name="Fractionnement conditionnel 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel]"
+                  description="Entrée vers la transformation de fractionnement conditionnel"
+                  name="Entrée de fractionnement conditionnel">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Centimeters"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel].Columns[Colonne 18]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Colonne 18"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]" />
+                    <inputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Address"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Bad records]"
+                  description="Sortie 1 de la transformation de fractionnement conditionnel"
+                  errorOrTruncationOperation="Calcul"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Bad records"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie l'expression. Cette version d'expression utilise les identificateurs de lignage à la place des noms de colonnes."
+                      name="Expression">[LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]}) &gt; 0 || [LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]}) == 0 || [LEN](#{Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]}) &gt; 200</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie la version claire de l'expression. Cette version d'expression utilise les noms de colonnes."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN([Colonne 18]) &gt; 0 || LEN(Centimeters) == 0 || LEN(Address) &gt; 200</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la position de la condition dans la liste des conditions que la transformation évalue. L'ordre d'évaluation se fait par ordre croissant de valeur."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Good Records]"
+                  description="Sortie par défaut de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  name="Good Records"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Sortie d'erreur de fractionnement conditionnel]"
+                  description="Sortie d'erreur de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de fractionnement conditionnel"
+                  synchronousInputId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20230905_FakenamesUK\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="1036"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20230905_FakenamesUK\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FakeNamesUK_update.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[FakeNamesUK_update.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Number]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]"
+                      name="Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Title]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Title]"
+                      name="Title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Surname]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]"
+                      name="Surname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Name]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Address]"
+                      length="5000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ZipCode]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]"
+                      name="ZipCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[EmailAddress]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Username]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Username]"
+                      name="Username"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Password]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Password]"
+                      name="Password"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthday]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]"
+                      name="Birthday"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCType]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCType]"
+                      name="CCType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCNumber]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCNumber]"
+                      name="CCNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CVV2]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CVV2]"
+                      name="CVV2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCExpires]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CCExpires]"
+                      name="CCExpires"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[BloodType]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BloodType]"
+                      name="BloodType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Kilograms]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Kilograms]"
+                      name="Kilograms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Centimeters]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Centimeters]"
+                      name="Centimeters"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Colonne 18]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 18]"
+                      name="Colonne 18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 19]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Colonne 19]"
+                      length="3000"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Colonne 19]"
+                      name="Colonne 19"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Username" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CVV2" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCExpires" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="BloodType" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Kilograms" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Centimeters" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Colonne 18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Colonne 18" />
+                    <externalMetadataColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Colonne 19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Colonne 19" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\20230905_FakenamesUK.Paths[Bad records]"
+              endId="Package\20230905_FakenamesUK\Destination de fichier plat 1.Inputs[Entrée de destination de fichier plat]"
+              name="Bad records"
+              startId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Bad records]" />
+            <path
+              refId="Package\20230905_FakenamesUK.Paths[Check Passed]"
+              endId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Inputs[Entrée de fractionnement conditionnel]"
+              name="Check Passed"
+              startId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Check Passed]" />
+            <path
+              refId="Package\20230905_FakenamesUK.Paths[Good Records]"
+              endId="Package\20230905_FakenamesUK\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+              name="Good Records"
+              startId="Package\20230905_FakenamesUK\Fractionnement conditionnel 1.Outputs[Good Records]" />
+            <path
+              refId="Package\20230905_FakenamesUK.Paths[Insufficient Data]"
+              endId="Package\20230905_FakenamesUK\Destination de fichier plat.Inputs[Entrée de destination de fichier plat]"
+              name="Insufficient Data"
+              startId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Outputs[Insufficient Data]" />
+            <path
+              refId="Package\20230905_FakenamesUK.Paths[Sortie de source de fichier plat]"
+              endId="Package\20230905_FakenamesUK\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]"
+              name="Sortie de source de fichier plat"
+              startId="Package\20230905_FakenamesUK\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="sql12">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="198,42"
+          Id="Package\20230905_FakenamesUK"
+          TopLeft="146,94" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\20230905_FakenamesUK">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\20230905_FakenamesUK\Source du fichier plat"
+          TopLeft="35.5,35.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\20230905_FakenamesUK\Destination OLE DB"
+          TopLeft="124,389" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\20230905_FakenamesUK\Fractionnement conditionnel"
+          TopLeft="57,144" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\20230905_FakenamesUK\Fractionnement conditionnel 1"
+          TopLeft="54,263" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\20230905_FakenamesUK\Destination de fichier plat"
+          TopLeft="502,145" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\20230905_FakenamesUK\Destination de fichier plat 1"
+          TopLeft="528,263" />
+        <EdgeLayout
+          Id="Package\20230905_FakenamesUK.Paths[Sortie de source de fichier plat]"
+          TopLeft="125,77.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38,66.5"
+              Start="0,0"
+              End="38,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.25"
+                    Point2="0,33.25"
+                    Point3="4,33.25" />
+                  <mssgle:LineSegment
+                    End="34,33.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34,33.25"
+                    Point2="38,33.25"
+                    Point3="38,37.25" />
+                  <mssgle:LineSegment
+                    End="38,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20230905_FakenamesUK.Paths[Check Passed]"
+          TopLeft="164,186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77"
+              Start="0,0"
+              End="0,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-30.5255078125,29.87548828125,61.051015625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20230905_FakenamesUK.Paths[Insufficient Data]"
+          TopLeft="269,165.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="233,0"
+              Start="0,0"
+              End="225.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="225.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="75.8750390625,5,73.749921875,9.7978515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20230905_FakenamesUK.Paths[Good Records]"
+          TopLeft="165,305">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.5,84"
+              Start="0,0"
+              End="44.5,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="40.5,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.5,42"
+                    Point2="44.5,42"
+                    Point3="44.5,46" />
+                  <mssgle:LineSegment
+                    End="44.5,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-9.14009765625,47,62.7801953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20230905_FakenamesUK.Paths[Bad records]"
+          TopLeft="276,284">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="252,0"
+              Start="0,0"
+              End="244.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="244.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="95.567421875,5,53.36515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\20230905_FakenamesUK\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
